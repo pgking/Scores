@@ -20,14 +20,14 @@ rightHand = \relative c' {
       f4 g a bes
       g2 a4 g
       f2 bes4 a
-      g1
+      e2 f4 g
     }
     \\
     {
       \tuplet 6/4 4 {f16 e d a d e g e d a d e a e d a d e bes' e, d a d e}
       \tuplet 6/4 4 {g16 e d bes d e g e d bes d e a e d bes d e g e d bes d e}
       \tuplet 6/4 4 {f16 e d a d e f e d a d e bes' e, d a d e a e d a d e}
-      \tuplet 6/4 4 {g16 cis, b a b cis g' cis, b a b cis g' cis, b a b cis g' cis, b a b cis}
+      \tuplet 6/4 4 {e16 cis b a b cis e cis b a b cis f cis b a b cis g' cis, b a b cis}
     }
   >>
   \repeat unfold 4 {\tuplet 6/4 {f16 e d a d e}}
@@ -40,7 +40,7 @@ rightHand = \relative c' {
   \repeat unfold 4 {\tuplet 6/4 {g'16 fis e b e fis}}
   \repeat unfold 4 {\tuplet 6/4 {g16 fis e c e fis}}
   \repeat unfold 4 {\tuplet 6/4 {a16 e c b c e}}
-  \tuplet 6/4 4 {a16 e c b c e a dis, c b c dis g fis e b e fis gis e d b d e\fermata}
+  \tuplet 6/4 4 {a16 dis, c b c dis a' dis, c b c dis g fis e b e fis gis e d b d e\fermata}
   <cis a'>4 <e a>8 cis r4 <e a>8 cis
   <d fis a>1
   <d fis a cis>1
@@ -58,10 +58,10 @@ rightHand = \relative c' {
   \ottava #1
   des f ges bes~ bes4
   \ottava #0
-  <des,, aes>4 <ees, aes> <des ges>2
+  <des,, aes>4 <ees, aes ces> <des ges bes>2
   <bes des ges>16 f' ees des bes des ees f ges4 bes
-  <bes, d f aes>1
-  \repeat unfold 4 {\tuplet 6/4 {ges'16 f ees bes ees f}}
+  <bes, d f aes>2\fermata ges'4\fermata f\fermata
+  \repeat unfold 4 {\tuplet 6/4 {ges16 f ees bes ees f}}
   \repeat unfold 4 {\tuplet 6/4 {f16 ees des bes des ees}}
   \repeat unfold 4 {\tuplet 6/4 {ges16 f ees bes ees f}}
   \repeat unfold 4 {\tuplet 6/4 {ges16 f ees ces ees f}}
@@ -87,7 +87,7 @@ leftHand = \relative c, {
   <e e'>1
   <c c'>2. <c c'>8 <b b'>
   <a a'>1
-  <a a'>4 <b b'> <e e'>2\fermata
+  <b b'>2 <e e'>2\fermata
   a16 e' a cis a,4 a16 e' a cis a,4
   \repeat unfold 4 {d,16 a' d fis a8 d}
   <a,, a'>4. <gis gis'>8 <fis fis'>4. <gis gis'>8
@@ -131,8 +131,8 @@ voix = \relative c'' {
   cis2 r
   \key ges \major
   r4 aes8 ges16 aes des8 f ees[ des]
-  ees8. f16 des8 c des4 r8 des
-  f8 ees des[ bes] ees8. f16 des4
+  bes8 c aes8. ges16 aes4 r8 aes
+  des8 c bes[ aes] des8. c16 des4
   r4 \tuplet 3/2 {des8 c bes} a8 c ees[ f]
   ges2 r4 \tuplet 3/2 4 {ges8 f ees des( ees des) ces des ces} bes( aes ges[) f]
   ges2 r
