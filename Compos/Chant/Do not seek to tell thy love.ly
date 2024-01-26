@@ -1,7 +1,7 @@
 \version "2.24.3"
 
 \header {
-  dedication = "To : Patricia Gonzalez"
+  dedication = "To and for : Patricia Gonzalez"
   title = "Do not seek to tell thy love"
   composer = "G. Mencière"
   poet = "W. Blake"
@@ -9,7 +9,7 @@
 
 global = {
   \key bes \major
-  \tempo "Andante con moto" 4 = 63 - 68
+  \tempo "Andante"
   \time 4/4
 }
 
@@ -17,13 +17,38 @@ rightHand = \relative c' {
   \global
   \clef treble
   \mergeDifferentlyHeadedOn
-  bes2
+  <ees f a>1
+  <d f bes>
+  <d f g>
+  <d f g>2 <c ees g>
+  <ees fis c>4 <ees ges c> <d g c> <d g b>
+  <c ees g c>1
+  <f aes bes>2 <ees g bes>
+  <d f bes> <ees f bes>
+  <d f bes>4 \tuplet 3/2 {bes'8 c d} <f, bes d>4 \tuplet 3/2 {bes8 c d}
+  <f, bes d>4 \tuplet 3/2 {bes8 c d} \tuplet 3/2 {<ees, bes' f'>4 ees'8} \tuplet 3/2 {ees des f}
+  <ges, bes ees>4 \tuplet 3/2 {bes8 c d} <g, bes e>2
+  <f a c>2. r4
+  <fis a d>2. r4
+  <g bes d>1
 }
 
 leftHand = \relative c, {
   \global
   \clef bass
   <f f'>1
+  <bes, bes'>
+  <b b'>
+  <c c'>2. c'8 bes
+  a4 aes g2
+  <c, c'>1
+  d'2 ees <f, f'>1
+  bes2 a!
+  aes g
+  ges4 bes, c2
+  \tuplet 3/2 4 {f8 c' f g a c f c a~} a4
+  \transpose c a {\relative c,, {\tuplet 3/2 4 {f8 c' f g a c f c a~} a4}}
+  \tuplet 3/2 {g,8 d' g} a4 \tuplet 3/2 {g,8 d' g} bes4
 }
 
 voix = \relative c'' {
