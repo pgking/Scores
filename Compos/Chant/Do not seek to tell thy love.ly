@@ -31,6 +31,23 @@ rightHand = \relative c' {
   <f a c>2. r4
   <fis a d>2. r4
   <g bes d>1
+  <ees g c>1
+  <f aes des>1
+  <ges bes ees>1
+  <f bes des>1
+  <f aes c>2 <bes, e aes>4 g'
+  <bes, c f>2 <c f>
+  <ees aes c>2 <f bes d>
+  <ees g c>1
+  <ees aes c>2 <f bes d>
+  <ees g c>2 r4 r
+  <c ees g>2 r2
+  <aes b f'>2 r2
+  <g c ees>1
+  <ees' a c>1
+  <g bes ees>1
+  <ees a c>1
+  <d f bes>1
 }
 
 leftHand = \relative c, {
@@ -49,6 +66,24 @@ leftHand = \relative c, {
   \tuplet 3/2 4 {f8 c' f g a c f c a~} a4
   \transpose c a {\relative c,, {\tuplet 3/2 4 {f8 c' f g a c f c a~} a4}}
   \tuplet 3/2 {g,8 d' g} a4 \tuplet 3/2 {g,8 d' g} bes4
+  \tuplet 3/2 {c,8 g' c} d4 \tuplet 3/2 {c,8 g' c} ees4
+  \tuplet 3/2 {des,8 aes' des} ees4 \tuplet 3/2 {des,8 aes' des} f4
+  \tuplet 3/2 {<ees,, ees'>8 bes'' ees} f4 \tuplet 3/2 {<ees,, ees'>8 bes'' ees} ges4
+  \tuplet 3/2 {bes,,8 f' bes} c4 \tuplet 3/2 {bes,8 f' bes} des4
+  \tuplet 3/2 {f,,8 c' f} g4 \tuplet 3/2 {c,,8 bes' c} e4
+  \tuplet 3/2 {f,8 c' f} g4 aes2
+  \tuplet 3/2 4 {aes,8 ees' aes bes c r bes,8 f' bes c d r}
+  \tuplet 3/2 4 {c,8 g' c d ees r c,8 g' c d ees r}
+  \tuplet 3/2 4 {aes,,8 ees' aes bes c r bes,8 f' bes c d r}
+  \tuplet 3/2 4 {c,8 g' c d ees r} r4 \tuplet 3/2 {c,8 bes aes}
+  g2. g4
+  <g, g'>2. <g g'>4
+  <c c'>1
+  <f f'>1
+  \tuplet 3/2 4 {ees8 bes' ees f g bes \change Staff = "up" ees f g} bes8 ees16 d
+  \change Staff = "down"
+  <f,,, f'>1
+  <bes, bes'>1
 }
 
 voix = \relative c'' {
@@ -80,10 +115,15 @@ voix = \relative c'' {
   c2 r
   r4 \tuplet 3/2 {c8 bes aes} c4 r
   r4 \tuplet 3/2 {b8 a b} c4 r
+  R1
+  r4 ees8 d c[ d] ees f
+  g2. r4
+  r4 g8 f g[ a] f ees
+  f2
 }
 
 paroles = \lyricmode {
-  Ne -- ver seek to tell they love
+  Ne -- ver seek to tell thy love
   Love that ne -- ver told can be __
   Ne -- _ ver seek
   to __ tell thy __ love
@@ -97,6 +137,8 @@ paroles = \lyricmode {
   Soon as __ she __ was __ gone __ from me
   A tra -- ve -- ler came by
   Si -- _ lent -- ly In -- vi --si -- bly
+  Ne -- ver seek to tell thy love
+  Love that ne -- ver told can be
 }
 
 \score {
@@ -108,8 +150,8 @@ paroles = \lyricmode {
     >>
     \new PianoStaff \with { instrumentName = "Piano" }
     <<
-      \new Staff \rightHand
-      \new Staff \leftHand
+      \new Staff = "up" \rightHand
+      \new Staff = "down" \leftHand
     >>
   >>
 }
