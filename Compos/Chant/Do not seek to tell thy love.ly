@@ -139,7 +139,7 @@ voix = \relative c'' {
   R1
   r4 aes8 g f[ g] aes bes
   g2 r2
-  r4 aes8 g f[ g] aes f
+  r4 c8 bes aes[ bes] c aes
   bes2 r
   r4 bes8 aes g[ aes] bes g
   c2 r
