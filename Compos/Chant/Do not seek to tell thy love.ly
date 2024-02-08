@@ -26,7 +26,7 @@ rightHand = \relative c' {
   <f aes bes>2 <ees g bes>
   <d f bes> <ees f bes>
   <d f bes>4 \tuplet 3/2 {bes'8 c d} <f, bes d>4 \tuplet 3/2 {bes8 c d}
-  <f, bes d>4 \tuplet 3/2 {bes8 c d} \tuplet 3/2 {<ees, bes' f'>4 ees'8} \tuplet 3/2 {ees des f}
+  <f, bes d>4 \tuplet 3/2 {bes8 c d} \tuplet 3/2 {<ees, bes' f'>4 ees'8} \tuplet 3/2 {ees d f}
   <ges, bes ees>4 \tuplet 3/2 {bes8 c d} <g, bes e>2
   <f a c>2. r4
   <fis a d>2. r4
@@ -44,10 +44,21 @@ rightHand = \relative c' {
   <c ees g>2 r2
   <aes b f'>2 r2
   <g c ees>1
-  <ees' a c>1
-  <g bes ees>1
-  <ees a c>1
-  <d f bes>1
+  <c ees aes>1
+  <bes ees g>1
+  <c ees g>1
+  <bes d g>1
+  <bes ees g>1
+  <c ees aes>1
+  <d f b>1
+  <ees g c>1
+  <c ees g c>2 <d f b>4 <c ees g c>4
+  <d aes' c>2 <d f b>4 <c ees g c>
+  <f aes bes>2 <c g' bes>2
+  <c f aes>1
+  <b f' es>4 <c ees g>2.
+  <g c ees>1
+  <f b d>2 <ees c'>2\fermata
 }
 
 leftHand = \relative c, {
@@ -80,10 +91,20 @@ leftHand = \relative c, {
   <g, g'>2. <g g'>4
   <c c'>1
   <f f'>1
-  \tuplet 3/2 4 {ees8 bes' ees f g bes \change Staff = "up" ees f g} bes8 ees16 d
-  \change Staff = "down"
-  <f,,, f'>1
-  <bes, bes'>1
+  <c c'>1
+  <aes aes'>1
+  <ees' ees'>1
+  <c c'>1
+  <f f'>1
+  <g g'>1
+  <c, c'>1
+  <c c'>2 <d d'>4 <ees ees'>4
+  <f f'>2 <g g'>4 <c, c'>4
+  <d d'>2 <ees ees'>2
+  <f f'>1
+  <g g'>4 <aes aes'>2.
+  <g g'>1
+  <g g'>2 <c, c'>2\fermata
 }
 
 voix = \relative c'' {
@@ -114,12 +135,24 @@ voix = \relative c'' {
   d4 \tuplet 3/2 {c8 d ees} d4. d8
   c2 r
   r4 \tuplet 3/2 {c8 bes aes} c4 r
-  r4 \tuplet 3/2 {b8 a b} c4 r
+  r4 \tuplet 3/2 {b8 a! b} c4 r
   R1
-  r4 ees8 d c[ d] ees f
-  g2. r4
-  r4 g8 f g[ a] f ees
-  f2
+  r4 aes8 g f[ g] aes bes
+  g2 r2
+  r4 aes8 g f[ g] aes f
+  bes2 r
+  r4 bes8 aes g[ aes] bes g
+  c2 r
+  r4 d8 c b[ c] d b
+  ees2 r
+  \tuplet 3/2 4 {ees8( g f ees) r ees d r d} ees4
+  \tuplet 3/2 4 {ees8( g f ees) r ees d r d} c4
+  c8 bes aes[ g] bes4. aes8
+  aes2 r4 \tuplet 3/2 {aes8 bes c}
+  aes8. f16 g2 r4
+  r4 \tuplet 3/2 {g8 aes g} g4 r
+  r4 \tuplet 3/2 {f8 ees d} c2\fermata
+  \bar "|."
 }
 
 paroles = \lyricmode {
@@ -139,6 +172,14 @@ paroles = \lyricmode {
   Si -- _ lent -- ly In -- vi --si -- bly
   Ne -- ver seek to tell thy love
   Love that ne -- ver told can be
+  Ne -- ver seek to tell thy love
+  Love that !ne -- ver told can be
+  Ah, __ She doth de -- part
+  Ah, __ She doth de -- part.
+  Soon as she was gone from me
+  A tra -- ve -- ler came by
+  Si -- _ lent -- ly 
+  in -- vi -- si -- bly.
 }
 
 \score {
