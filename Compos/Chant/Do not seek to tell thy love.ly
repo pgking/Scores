@@ -17,7 +17,26 @@ rightHand = \relative c' {
   \global
   \clef treble
   \mergeDifferentlyHeadedOn
-  <ees f a>1
+  <<
+    {
+      r4 f'8 ees d[ ees] f d
+      r4 ees8 d c[ d] ees c
+      r4 d8 c bes[ c] d bes
+      c8 bes a[ bes] c d ees[ c]
+      r4 b8 a g[ a] b g
+      r4 c8 bes c[ d] ees d
+    }
+    \\
+    {
+      <bes d>1
+      <g ees'>1
+      <g bes d>1
+      <g c>1
+      <g b>1
+      <g c>1
+    }
+  >>
+  <ees a c>1
   <d f bes>
   <d f g>
   <d f g>2 <c ees g>
@@ -64,6 +83,12 @@ rightHand = \relative c' {
 leftHand = \relative c, {
   \global
   \clef bass
+  <bes' bes'>1
+  <c c'>1
+  <g g'>1
+  <fis fis'>1
+  <f! f'!>1
+  <ees ees'>1
   <f f'>1
   <bes, bes'>
   <b b'>
@@ -110,6 +135,7 @@ leftHand = \relative c, {
 voix = \relative c'' {
   \global
   \clef treble
+  R1*6
   r4 ees8 d c[ d] ees f
   bes,2 r
   r4 ees8 d c[ d] ees c
@@ -186,7 +212,7 @@ paroles = \lyricmode {
   <<
     \new Staff \with { instrumentName = "Singer" }
     <<
-      \new Voice = "voice" {\voix}
+      \new Voice = "voice" \with {\consists "Ambitus_engraver"} {\voix}
       \new Lyrics \lyricsto "voice" \paroles
     >>
     \new PianoStaff \with { instrumentName = "Piano" }
