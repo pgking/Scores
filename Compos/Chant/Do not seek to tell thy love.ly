@@ -19,12 +19,12 @@ rightHand = \relative c' {
   \mergeDifferentlyHeadedOn
   <<
     {
-      r4 f'8 ees d[ ees] f d
-      r4 ees8 d c[ d] ees c
-      r4 d8 c bes[ c] d bes
+      s4^\markup{\italic "Rubato"} f'8 ees d[ ees] f d
+      s4 ees8 d c[ d] ees c
+      s4 d8 c bes[ c] d bes
       c8 bes a[ bes] c d ees[ c]
-      r4 b8 a g[ a] b g
-      r4 c8 bes! c[ d] ees d
+      s4 b8 a g[ a] b g
+      s4 c8 bes! c[ d] ees d
     }
     \\
     {
@@ -52,9 +52,9 @@ rightHand = \relative c' {
   <d, f bes>4 \tuplet 3/2 {bes'8 c d} <f, bes d>4 \tuplet 3/2 {bes8 c d}
   <f, bes d>4 \tuplet 3/2 {bes8 c d} \tuplet 3/2 {<ees, bes' f'>4 ees'8} \tuplet 3/2 {ees d f}
   <ges, bes ees>4 \tuplet 3/2 {bes8 c d} <g, bes e>2
-  <f a c>2. r4
-  <fis a d>2. r4
-  <g bes d>4. c8 bes2
+  <f a c>4 \tuplet 3/2 {c'8 d e} c4 r
+  <fis, a d>4 \tuplet 3/2 {d'8 e fis} d4 r
+  \tuplet 3/2 {<g, bes d>8 c bes} d8 c bes2
   <ees, g>4 c' <ees, g> ees'
   <f, aes des>4 <f aes> des' f
   <ges, bes ees>2 <ges bes>2
@@ -81,7 +81,7 @@ rightHand = \relative c' {
   <d, f b>2. <d f b>4
   <c ees g c>4. <ees ees'>8 <d d'> <c c'> <d d'>[ <ees ees'>]
   \tuplet 3/2 4 {<ees g c ees>8 <g g'> <f f'> <ees ees'> r <c c'>} <d f b>4 <c ees g c>4
-  <d aes' c>2 <d f b>4 <c ees g c>
+  \tuplet 3/2 4 {<d aes' c>8 <g g'> <f f'> <ees ees'> r <c c'>} <d f b>4 <c ees g c>
   <bes f' aes>2 <bes c ees g>2
   <aes c f aes>1
   <b f' es>4 <c ees g>2.
@@ -92,13 +92,13 @@ rightHand = \relative c' {
 leftHand = \relative c, {
   \global
   \clef bass
-  <bes' bes'>1
-  <c c'>1
-  <g g'>1
-  <fis fis'>1
-  <f! f'!>1
-  <ees ees'>1
-  <f f'>1
+  <bes' bes'>2 <f' bes d>
+  <c c'>2 <g' c ees>
+  <g, g'>2 <d' g bes>
+  <fis, fis'>2 <d' a' c>
+  <f,! f'!>2 <d' g b>
+  <ees, ees'>2 <ees' g c>
+  <f, f'>1
   <<
     {
       s4. bes8 bes, bes' s4
