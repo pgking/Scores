@@ -58,6 +58,33 @@ rightHand = \relative c' {
   <e c'>
   <cis! fis ais>
   <d fis b>4. s b'2.
+  <d, fis a>4. s a'2.
+  <cis, g' cis>4. s cis'2.
+  <fis, d'>2. <fis d'>4. d'8 cis b
+  <d, b'>4. d8 fis b <g e'>4. g8 b e
+  <a, fis'>4. cis,8 fis a <d, b'>4. d8 fis b
+  <d, b'>4. d8 fis b <g e'>4. g8 b e
+  <ais, fis'>4. cis,8 fis ais <d, b'>4. d8 fis b
+  <<{e4. g b d cis ais <d, b'>2.}\\{e8 g, e g' e g, b' d, b d' fis, d cis' e, cis ais' cis, ais s2.}>>
+  d8 d, fis \stemUp b d fis \stemNeutral <<{b4. fis}\\{b8 d, b fis' d fis,}>>
+  <b g'>8 g b e g b <<{e4. g,}\\{e'8 g, e g e g,}>>
+  <cis a'>8 cis, e \stemUp a cis e \stemNeutral <<{a4. e}\\{a8 cis, a e' cis e,}>>
+  <a fis'>8 fis a d fis a <<{d4. cis}\\{d8 fis, d cis' fis, d}>>
+  <d b'>8 d, fis \stemUp b d fis \stemNeutral <<{d'4. cis}\\{d8 fis, d cis' fis, d}>>
+  <d b'>8 d, fis b d fis <<{d'4. b}\\{d8 fis, d b' fis d}>>
+  <fis a>8 fis, a d fis a <<{d4. a}\\{d8 fis, d a' fis d}>>
+  <cis ais>8 cis, fis ais cis fis <e cis'>4. <cis ais'>
+  <d b'>4. s <fis d'> <d b'>
+  <b fis'>4. s <d b'> <b fis'>
+  <fis d'>4. s <fis' d'> <d b'>
+  <b g'>4. r <b g'> <g e'>
+  <ais fis'>4. r <ais cis> <fis ais>
+  <d b'>4. s <fis' d'>4 <e cis'>8 <d b'>4 <e cis'>8
+  <cis a'>2. <e cis'>4 <d b'>8 <cis a'>4 <d b'>8
+  <b g'>2. <b g'>4 <a fis'>8 <g e'>4 <a fis'>8
+  <fis d'>2. r4. <fis d'>
+  <ais cis>2. r4. ais
+  <d, b'>2. r
 }
 
 leftHand = \relative c {
@@ -92,6 +119,31 @@ leftHand = \relative c {
   <c g' c>
   <fis, cis'! fis>
   g8 d' g b \change Staff = "up" d fis \change Staff = "down" r4. r
+  a,,8 d fis a \change Staff = "up" d fis \change Staff = "down" r4. r
+  \leftHandPatternMajorSwitch
+  \transpose c f, {\leftHandPatternMajorSwitch}
+  \repeat unfold 2 {b,,8 fis' b s4. e,,8 b' e s4. fis,8 cis' fis s4. b,8 fis' b s4.}
+  e,,8 b' e g b e b,8 fis' b d fis b
+  fis,,8 cis' fis ais cis fis b,,8 fis' b d \change Staff = "up" fis b \change Staff = "down"
+  \leftHandPatternMinorSwitch
+  \transpose c f, {\leftHandPatternMinor}
+  \leftHandPatternMajorSwitch
+  \transpose c f, {\leftHandPatternMajor}
+  \leftHandPatternMinorSwitch
+  \transpose c bes, {\leftHandPatternMajor}
+  \transpose c f, {\leftHandPatternMajor}
+  \transpose c a, {\leftHandPatternMajor}
+  \leftHandPatternMinorSwitch
+  \leftHandPatternMinorSwitch
+  \leftHandPatternMinorSwitch
+  \transpose c f, {\leftHandPatternMinor}
+  \transpose c a, {\leftHandPatternMajor}
+  \leftHandPatternMinorSwitch
+  a,,4 e'8 a4 cis8 e4. r
+  e,,4 b'8 e4 g8 b4. r
+  fis,4 d'8 fis4 b8 d4. r
+  fis,,4. fis' cis' r
+  <b,, b'>4. fis'' b r
 }
 
 voix = \relative c'' {
@@ -116,6 +168,30 @@ voix = \relative c'' {
   ais4.~ ais4 ais8 cis4. cis8 d e
   d2. r4. r
   R1.*3
+  r2. r4. r8 r cis
+  d4.~ d4 cis8 d4. d4 fis,8
+  g2. g4. g
+  fis4.~ fis4 ais8 cis4.~ cis4 ais8
+  b2. b4. b8 a g
+  a2.~ a4. a8 b cis
+  e2.~ e4. d
+  d2. r4. r
+  d4. fis, g g
+  cis4. e, fis fis
+  d'4. fis, g g
+  cis4. cis d2.
+  R1.*2
+  fis,4. b d4 cis8 b4 a8
+  g2. r4. r
+  a4. b cis cis8 d e
+  d2. r4. r
+  R1.*6
+  fis,4.~ fis4 fis8 d'4. fis,8 g a
+  g2. g4. r
+  ais4.~ ais4 b8 cis4. fis,8 d' cis
+  b2. r4. r
+  R1.*5
+  \bar "|."
 }
 
 paroles = \lyricmode {
@@ -123,6 +199,11 @@ paroles = \lyricmode {
   En moi- -- même re -- clus je me suis fait trans -- fu -- ge
   Puis -- qu'il faut qu'on se las -- se d'être en un mê -- me lieu
   Pour -- quoi ne se las -- ser d'être à soi tou -- jours é -- gal?
+  De moi mon âme est en quê -- te mais je bats la cam -- pa -- gne
+  Fas -- se le ciel qu'elle ne me trouve ja -- mais
+  N'êt -- re qu'un est u -- ne geô -- le êt -- re moi c'est n'êt -- re point
+  Dans la fui -- te je vi -- vrai Pour -- tant bel et bien je vis
+  N'êt -- re qu'un est u -- ne geô -- le êt -- re moi c'est n'êt -- re point
 }
 
 \score {
