@@ -114,8 +114,11 @@ right = \relative c'' {
   \ottava #1
   g'16[ fis e d c b]^3 \ottava #0 a g fis^4 e d c^1 b^3[ a^2 b^3 c^1] d e fis g a[ b \ottava #1 c d] e fis g^1 a
   b[^3 a g fis e d] \ottava #0 c b a g fis e d[ c b a] g a b c d[ e fis g] a b c d
-  c[ b a g fis e] d c b a g fis e[ d e fis] g a b c d[ e fis g] a b c d
+  c[ b a g fis e] d c b a g fis e[ d e fis] g a b c d[ e fis g] a b a fis
   <e, e'>4. <fis fis'> \bar "!" <g g'>4 <b, b'> <b' b'> <a a'>
+  <g g'>4. <a a'> \bar "!" <fis fis'>1
+  <g g'>4. <a a'> \bar "!" <fis fis'>2 <e e'>4 <d d'>
+  <e e'>4. <g g'> \bar "!" <e e'>1
   %<g g'>4. <fis fis'> \bar "!" <e e'>4 <d d'> <c c'> <b b'>
   %<a a'>4. <g g'> \bar "!" <a a'>4 <b b'> <c c'> <g g'>
   %<fis fis'>4. <g g'> \bar "!" <a a'>4 <fis fis'> <g g'> <a a'>
@@ -207,6 +210,9 @@ left = \relative c {
   \transpose c c' {\leftHandMajorNext}
   \transpose c d' {\leftHandMajorNext}
   % Changement de mesure
+  \leftHandMinor
+  \leftHandMajor
+  \transpose c d {\leftHandMajor}
   \leftHandMinor
   \leftHandMajor
   \transpose c d {\leftHandMajor}
