@@ -33,35 +33,35 @@ rightHand = \relative c' {
   \repeat unfold 2 {<g e'>4. r <g' e'> <e b'>}
   <cis, a'>4. s <cis' a'> <a e'>
   <a fis'>4. s <fis' d'> <d a'>
-  <fis, d'>4. s <fis' d'> <d b'>
-  <b g'>4. s <b' g'> <g d'>
-  <e cis'>4. s <cis a'> \tuplet 2/3 {<d b'>8 <e cis'>}
-  <fis d'>4. s <d b'> <b fis'>
+  <fis, d'>4. s <fis' d'>\< <d b'>
+  <b g'>4. s\! <b' g'> <g d'>
+  <e cis'>4. s <cis a'>\> \tuplet 2/3 {<d b'>8 <e cis'>}
+  <fis d'>4.\!\p s <d b'> <b fis'>
   <fis d'>4. s <<{d''4. b}\\{d8 fis, d b' d, b}>>
-  <d, b' fis'>4.\arpeggio s <<{d''4. b}\\{d8 fis, d b' d, b}>>
-  <e, b' g'>4.\arpeggio s <<{e''4. b}\\{e8 g, e b' g b,}>>
-  <<{ais'4. ais b cis d}\\{ais8 cis, ais ais' cis, ais b' fis b, cis' e, cis d' fis, d}>>
-  \stemUp fis8 d fis, \stemNeutral <d b'>4. <fis d'>
-  <d b'>4. s <<{d''4. fis,}\\{d'8 fis, d fis d fis,}>>
+  <d, b' fis'>4.\arpeggio\< s <<{d''4. b}\\{d8 fis, d b' d, b}>>
+  <e, b' g'>4.\arpeggio\! s <<{e''4. b}\\{e8 g, e b' g b,}>>
+  <<{ais'4.\< ais b cis d\!}\\{ais8 cis, ais ais' cis, ais b' fis b, cis' e, cis d' fis, d}>>
+  \stemUp fis8 d fis, \stemNeutral <d' b'>4. <b fis'>
+  <d, b'>4.\mf s <<{d''4. fis,}\\{d'8 fis, d fis d fis,}>>
   <g e'>4. s <<{e''4. b}\\{e8 g, e b' g b,}>>
   <cis a'>4. s <<{e'4. g,}\\{e'8 g, e g e g,}>>
   <a fis'>4. s <<{d'4. fis,}\\{d'8 fis, d fis d fis,}>>
-  <fis d'>4. s <<{d''4. fis,}\\{d'8 fis, d fis d fis,}>>
+  <fis d'>4._\markup {\italic "cresc."} s <<{d''4. fis,}\\{d'8 fis, d fis d fis,}>>
   <g e'>4. s <<{e''4. g,}\\{e'8 g, e g e g,}>>
-  <ais fis'>4. s <<{cis'4. ais}\\{cis8 e, cis ais' e ais,}>>
+  <ais fis'>4.\f s <<{cis'4. ais}\\{cis8 e, cis ais' e ais,}>>
   <d b'>4. s <<{b'4. fis}\\{b8 fis d fis d fis,}>>
   <fis d'>8 d fis \stemUp b d fis \stemNeutral <<{d'4. b}\\{d8 fis, d b' d, b}>>
   <b g'>8 g b e g b <<{e4. b}\\{e8 g, e b' g b,}>>
-  <<{ais'4. ais b cis fis, b,}\\{ais'8 cis, ais ais' cis, ais b' fis b, cis' e, cis fis d fis, s4.}>>
-  <d' b'>2.
-  <d, b'>1.
-  <e c'>
-  <cis! fis ais>
+  <<{cis'4.( cis b ais b b,)}\\{cis'8 ais cis, cis' ais cis, b' fis b, ais' e cis b' fis d s4.}>>
+  <d b'>2.
+  <d, fis b>2.\arpeggio <fis d'>4. <d b'>
+  <e g c>2.\arpeggio <g e'>4. <e c'>
+  <cis! fis ais>2.\arpeggio <fis cis'>4. <cis ais'>
   <d fis b>4. s b'2.
   <d, fis a>4. s a'2.
   <cis, g' cis>4. s cis'2.
   <fis, d'>2. <fis d'>4. d'8 cis b
-  <d, b'>4. d8 fis b <g e'>4. g8 b e
+  <fis d'>4._\markup {\italic "con moto"} d8 fis b <g e'>4. g8 b e
   <a, fis'>4. cis,8 fis a <d, b'>4. d8 fis b
   <d, b'>4. d8 fis b <g e'>4. g8 b e
   <ais, fis'>4. cis,8 fis ais <d, b'>4. d8 fis b
@@ -70,21 +70,21 @@ rightHand = \relative c' {
   <b g'>8 g b e g b <<{e4. g,}\\{e'8 g, e g e g,}>>
   <cis a'>8 cis, e \stemUp a cis e \stemNeutral <<{a4. e}\\{a8 cis, a e' cis e,}>>
   <a fis'>8 fis a d fis a <<{d4. cis}\\{d8 fis, d cis' fis, d}>>
-  <d b'>8 d, fis \stemUp b d fis \stemNeutral <<{d'4. cis}\\{d8 fis, d cis' fis, d}>>
-  <d b'>8 d, fis b d fis <<{d'4. b}\\{d8 fis, d b' fis d}>>
+  <d b'>8 d, fis \stemUp b d fis \stemNeutral <<{fis'4. cis}\\{fis8 d fis, cis' fis, d}>>
+  <fis d'>8 d, fis b d fis <<{d'4. b}\\{d8 fis, d b' fis d}>>
   <fis a>8 fis, a d fis a <<{d4. a}\\{d8 fis, d a' fis d}>>
-  <cis ais>8 cis, fis ais cis fis <e cis'>4. <cis ais'>
+  <cis ais'>8 cis, fis ais cis fis <e cis'>4._\markup {\italic "Ral."} <cis ais'>
   <d b'>4. s <fis d'> <d b'>
   <b fis'>4. s <d b'> <b fis'>
   <fis d'>4. s <fis' d'> <d b'>
   <b g'>4. r <b g'> <g e'>
   <ais fis'>4. r <ais cis> <fis ais>
-  <d b'>4. s <fis' d'>4 <e cis'>8 <d b'>4 <e cis'>8
-  <cis a'>2. <e cis'>4 <d b'>8 <cis a'>4 <d b'>8
-  <b g'>2. <b g'>4 <a fis'>8 <g e'>4 <a fis'>8
+  <d b'>4. s <fis' d'>4. <d b'>
+  <cis a'>2._\markup{\italic "morendo"} <cis a'>4. <a e'>
+  <b g'>2. <b g'>4. <g e'>
   <fis d'>2. r4. <fis d'>
   <ais cis>2. r4. ais
-  <d, b'>2. r
+  <d, b'>1.\fermata
 }
 
 leftHand = \relative c {
@@ -115,9 +115,9 @@ leftHand = \relative c {
   \transpose c f, {\leftHandPatternMinor}
   \transpose c a, {\leftHandPatternMajor}
   \leftHandPatternMinorSwitch
-  <b fis' b>1.
-  <c g' c>
-  <fis, cis'! fis>
+  <b fis' b>1.\arpeggio
+  <c g' c>\arpeggio
+  <fis, cis'! fis>\arpeggio
   g8 d' g b \change Staff = "up" d fis \change Staff = "down" r4. r
   a,,8 d fis a \change Staff = "up" d fis \change Staff = "down" r4. r
   \leftHandPatternMajorSwitch
@@ -143,67 +143,69 @@ leftHand = \relative c {
   e,,4 b'8 e4 g8 b4. r
   fis,4 d'8 fis4 b8 d4. r
   fis,,4. fis' cis' r
-  <b,, b'>4. fis'' b r
+  <b,, b'>1.\fermata
 }
 
 voix = \relative c'' {
   \global
   R1.*2
-  b2. b4. fis8 g a
+  fis,2. b4. fis8 g a
   g2. r4. r
-  r2. r4. r8 r g
+  r2. r4. g
   a2.~ a4. e8 fis g
   fis2. fis4. r
-  fis4.~ fis4 fis8 b4.~ b4 fis8
+  fis4.~ fis4 fis8 b4. b4 fis8
   g2. r4. r
   a2. a4. e8 fis g 
   fis2. fis4. r
   R1.*5
-  b4.~ b4 b8 d4. \tuplet 2/3 {fis,8 fis}
+  b4.~^\mf b4 b8 d4. \tuplet 2/3 {fis,8 fis}
   g2. g4. r
-  a2. a4. e8 fis g
+  a2. cis4. e,8 fis g
   fis2. r4. r
   fis2. d'4. fis,8 g a
   g2. r4. r
   ais4.~ ais4 ais8 cis4. cis8 d e
-  d2. r4. r
-  R1.*3
-  r2. r4. r8 r cis
-  d4.~ d4 cis8 d4. d4 fis,8
+  d1.^\>
+  R1.\!
+  R1.*2
+  r2. r4. r8 r fis,
+  d'4.~ d4 cis8 d4. \tuplet 2/3 {d8 fis,8}
   g2. g4. g
   fis4.~ fis4 ais8 cis4.~ cis4 ais8
   b2. b4. b8 a g
   a2.~ a4. a8 b cis
-  e2.~ e4. d
+  e2. e4. d
   d2. r4. r
   d4. fis, g g
   cis4. e, fis fis
   d'4. fis, g g
   cis4. cis d2.
   R1.*2
-  fis,4. b d4 cis8 b4 a8
-  g2. r4. r
-  a4. b cis cis8 d e
-  d2. r4. r
+  fis,4. b d4 cis8 b4 d8
+  e2.~ e4. r
+  a,4. b cis cis8 d e
+  fis1.
   R1.*6
-  fis,4.~ fis4 fis8 d'4. fis,8 g a
+  fis,4.~^\markup {\bold "Lento"} fis4 fis8 d'4. fis,8 g a
   g2. g4. r
   ais4.~ ais4 b8 cis4. fis,8 d' cis
+  b1.~
   b2. r4. r
-  R1.*5
+  R1.*4
   \bar "|."
 }
 
 paroles = \lyricmode {
   Je suis un é -- va -- dé du jour de ma nais -- san -- ce
-  En moi- -- même re -- clus je me suis fait trans -- fu -- ge
+  En moi- -- mê -- me re -- clus je me suis fait trans -- fu -- ge
   Puis -- qu'il faut qu'on se las -- se d'être en un mê -- me lieu
   Pour -- quoi ne se las -- ser d'être à soi tou -- jours é -- gal?
   De moi mon âme est en quê -- te mais je bats la cam -- pa -- gne
-  Fas -- se le ciel qu'elle ne me trouve ja -- mais
-  N'êt -- re qu'un est u -- ne geô -- le êt -- re moi c'est n'êt -- re point
+  Fas -- se le ciel qu'elle ne me trou -- ve ja -- mais
+  N'ê -- tre qu'un est u -- ne geô -- le ê -- tre moi c'est n'ê -- tre point
   Dans la fui -- te je vi -- vrai Pour -- tant bel et bien je vis
-  N'êt -- re qu'un est u -- ne geô -- le êt -- re moi c'est n'êt -- re point
+  N'ê -- tre qu'un est u -- ne geô -- le ê -- tre moi c'est n'ê -- tre point
 }
 
 \score {

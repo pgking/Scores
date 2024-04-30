@@ -2,12 +2,13 @@
 
 \header {
   title = "Do not stand at my grave"
-  composer = "Gillian Mencière"
+  composer = "G. Mencière"
+  poet = "C. Harner"
 }
 
 global = {
   \key d \minor
-  \tempo "Andante con moto" 4 = 63 - 68
+  \tempo "Andante con moto" 4 = 63 - 70
   \time 4/4
 }
 
@@ -17,11 +18,11 @@ rightHand = \relative c' {
   \mergeDifferentlyHeadedOn
   <<
     {
-      f4 g a bes
+      f4( g a bes
       g2 a4 g
       f2 bes4 a
       \override TextSpanner.bound-details.left.text = "rit."
-      e2 f4_\startTextSpan \after 8.. \stopTextSpan g4
+      e2 f4_\startTextSpan \after 8.. \stopTextSpan g4)
     }
     \\
     {
@@ -83,8 +84,8 @@ leftHand = \relative c, {
   <a a'>
   <d, d'>
   <a a'>
-  <d d'>2. \tuplet 3/2 {<c c'>8 <bes bes'> <a a'>}
-  <g g'>1
+  <d d'>2. \tuplet 3/2 {<c c'>8( <bes bes'> <a a'>}
+  <g g'>1)
   <d' d'>~
   <d d'>
   \override TextSpanner.bound-details.left.text = "accel."

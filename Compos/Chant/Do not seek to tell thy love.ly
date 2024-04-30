@@ -31,7 +31,7 @@ rightHand = \relative c' {
       <bes d>1
       <g ees'>1
       <g bes d>1
-      <g c>1
+      <a c>1
       <g b>1
       <g c>1
     }
@@ -82,10 +82,10 @@ rightHand = \relative c' {
   <c ees g c>4. <ees ees'>8 <d d'> <c c'> <d d'>[ <ees ees'>]
   \tuplet 3/2 4 {<ees g c ees>8 <g g'> <f f'> <ees ees'> r <c c'>} <d f b>4 <c ees g c>4
   \tuplet 3/2 4 {<d aes' c>8 <g g'> <f f'> <ees ees'> r <c c'>} <d f b>4 <c ees g c>
-  <bes f' aes>2 <bes c ees g>2
+  <bes f' aes>2^\markup {\bold "Lento"} <bes c ees g>2
   <aes c f aes>1
   <b f' es>4 <c ees g>2.
-  <g c ees>2. r4
+  <g c ees>2._\markup {\italic "morendo"} r4
   <f b d>2 <ees c'>2\fermata
 }
 
