@@ -1,9 +1,8 @@
-\version "2.20.0"
+\version "2.24.3"
 
 \header {
-  title = "The meadow"
-  subtitle = "For now"
-  composer = "Gillian"
+  title = "The Meadow"
+  composer = "G. Mencière"
 }
 
 leftHandMinor = \relative c, {
@@ -45,7 +44,7 @@ right = \relative c'' {
   <fis a> d fis a <g b> d g b <a c> e d' c <e, g b>8.\fermata b'16
   <e, g b e>8 d'16 c <dis, b'>8\fermata r16 b' <e, g b e> e' d c b16\fermata a\fermata <dis,! g>\fermata fis\fermata
   \compoundMeter #'((6 8) (4 4))
-  e4. fis g2. g8 fis
+  e4.^\markup {\bold "Faster"} fis g2. g8 fis
   e4. fis g2. g8 fis
   d4. e fis2. e8 d
   e4. fis g2. fis8 e
@@ -61,7 +60,7 @@ right = \relative c'' {
   <b, g'>4. <a fis'> <g e'>2. d'8 c
   <g b>4. <fis a> <e g>2. g4
   <d fis>4. e d2. e4
-  e8[^> b e]^> fis^> b, fis'^> \bar "!" g[^> b,] e fis g[ fis] e fis
+  e8[^>^\markup {\bold "Even faster"} b e]^> fis^> b, fis'^> \bar "!" g[^> b,] e fis g[ fis] e fis
   e8[^> b e]^> fis^> b, fis'^> \bar "!" g[^> b,] e fis g[ fis] e fis
   d[^> a d]^> e^> a, e'^> \bar "!" fis^>[ a,] d e fis[ e] d fis
   e[^> b e]^> fis^> b, fis'^> \bar "!" g[^> b,] e fis g[ e] fis g
@@ -93,7 +92,7 @@ right = \relative c'' {
   <e g>4. fis \bar "!" <e g>2. g4
   <d fis>4. e \bar "!" <d fis>2. fis4
   \compoundMeter #'((6 8) (5 4))
-  e8 e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,] e e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,]
+  e8^\markup {\bold "A Tempo"} e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,] e e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,]
   e8 e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,] e e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,]
   \transpose e fis {\relative c' {e8 e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,] e e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,]}}
   e8 e' e[ \ottava #1 e'] e \ottava #0 e, e[ e,] e e' e[ \ottava #1 e'] e \ottava #0 e, <e, e'>[ <fis fis'>]
@@ -117,12 +116,21 @@ right = \relative c'' {
   c[ b a g fis e] d c b a g fis e[ d e fis] g a b c d[ e fis g] a b a fis
   <e, e'>4. <fis fis'> \bar "!" <g g'>4 <b, b'> <b' b'> <a a'>
   <g g'>4. <a a'> \bar "!" <fis fis'>1
-  <g g'>4. <a a'> \bar "!" <fis fis'>2 <e e'>4 <d d'>
+  <g g'>4. <a a'> \bar "!" <fis fis'>4 <e e'> <d d'> <e e'>
   <e e'>4. <g g'> \bar "!" <e e'>1
-  %<g g'>4. <fis fis'> \bar "!" <e e'>4 <d d'> <c c'> <b b'>
-  %<a a'>4. <g g'> \bar "!" <a a'>4 <b b'> <c c'> <g g'>
-  %<fis fis'>4. <g g'> \bar "!" <a a'>4 <fis fis'> <g g'> <a a'>
-  %<g g'>4. <fis fis'> \bar "!" <e e'>1
+  <e e'>4. <fis fis'> \bar "!" <g g'>4 <b, b'> <b' b'> <c c'>
+  <b b'>4. <a a'> \bar "!" <g g'>1
+  <b b'>4. <c c'> \bar "!" <a a'>4 <g g'> <fis fis'> <e e'>
+  <g g'>4. <fis fis'> \bar "!" <e e'>1
+  <e e'>4. <fis fis'> \bar "!" <g g'>2 <fis fis'>4 <e e'>
+  <g g'>4. <fis fis'> \bar "!" <e e'>2 <g g'>4 <a a'>
+  <fis fis'>4. <e e'> \bar "!" <d d'>4 <g g'> <fis fis'> <e e'>
+  <fis fis'>4. <e e'> \bar "!" <e e'>1
+  <e e'>4. <d d'> \bar "!" <e e'>2. <e e'>4
+  <g g'>4. <e e'> \bar "!" <d d'>2. <e e'>4
+  <d d'>4. <c c'> \bar "!" <b b'>2. <d d'>4
+  <e e'>2.~ \bar "!" <e e'>1\fermata
+  \bar "|."
 }
 
 
@@ -187,7 +195,7 @@ left = \relative c {
   \transpose c d {\relative c, {c8[ g' c] g d' g, e'[ g,] d' g, c[ g] c, g'}}
   \transpose e a {\leftHandMinor}
   \leftHandMinor
-  \transpose c g {\relative c, {c8[ g' c] g d' g, e'4 d c c,}}
+  \transpose c g {\relative c, {c8[ g' c] g d' g, e'4^\markup {\italic "Rit."} d c c,}}
   \transpose c d {\relative c, {c8[ g' c] g d' g, e'4 d c c,}}
   e8[ b' e] b fis' b, g'2 e4 e,
   c8[ g' c] g d' g, e'2 c4 c,
@@ -213,10 +221,23 @@ left = \relative c {
   \leftHandMinor
   \leftHandMajor
   \transpose c d {\leftHandMajor}
+  % Fin de gammes
   \leftHandMinor
   \leftHandMajor
   \transpose c d {\leftHandMajor}
   \leftHandMinor
+  \leftHandMinor
+  \leftHandMajor
+  \transpose c d {\leftHandMajor}
+  \leftHandMinor
+  \leftHandMinor
+  \leftHandMajor
+  \transpose c d {\leftHandMajor}
+  \leftHandMinor
+  \leftHandMinor
+  \leftHandMajor
+  \transpose c d {\leftHandMajor}
+  e8[ b' e] b fis' b, g'1\fermata
 }
 
 

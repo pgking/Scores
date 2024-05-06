@@ -177,9 +177,9 @@ voix = \relative c'' {
   a2.~ a4. a8 b cis
   e2. e4. d
   d2. r4. r
+  d4. fis, g b
+  cis4. e, fis b
   d4. fis, g g
-  cis4. e, fis fis
-  d'4. fis, g g
   cis4. cis d2.
   R1.*2
   fis,4. b d4 cis8 b4 d8
